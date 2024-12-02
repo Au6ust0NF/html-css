@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+
+    --font-destaque: "Libre Baskerville", serif;
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --cor00: #ffeed8;
+    --cor01: #F2D1A7;
+    --cor02: #F9C191;
+    --cor03: #6F3E30;
+
+    --cor01new:#D9AA52;
+    --cor02new: #BF814B;
+    --cor03new: #A64B29;
+    --cor04new: #733122;
+    --cor05new: #40211A;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--font-padrao);
+    background-color: var(--cor05new);
+    color: var(--cor01new);
+}
+
+header {
+    background-image: url(imagens/_13c10123-3a61-49cc-b918-81d5a8fce62f\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /*background-image: linear-gradient(to bottom, var(--cor04new), var(--cor05new));*/
+    
+    font-family: var(--font-destaque);
+    color: white;
+    text-align: center;
+    height: 300px;
+
+}
+
+#cabecalho > h1 {
+    padding-top: 100px ;
+    font-size: 40px;
+     
+}
+
+#cabecalho > h3 {
+    padding: 40px;
+    margin: 25px;
+}
+
+main {
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+
+    border: 0;
+    flex: 1;
+
+    padding: 10px;
+    background-color: var(--cor05new);
+    border-radius: 0px 0px 15px 15px;
+    /*box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.345);*/
+
+}
+
+main > h1, h2 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    padding: 10px;
+}
+
+main > h2 {
+    text-align: left;
+    line-height: 1em;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to right, var(--cor04new), transparent);
+    padding: 15px;
+
+}
+
+main > p {
+    text-indent: 5px;
+    font-weight: 700;
+
+    margin: 5px;
+    padding: 5px;
+    line-height: 2em;
+}
+
+label{
+    font-size: 40px;
+}
+footer {
+    background-color: var(--cor02);
+    padding: 3px;
+    margin-top: 25px;
+    font-weight: 550;
+}
+
+footer > h1 {
+    text-align: left;
+    font-family: var(--font-destaque);
+}
+
+footer > p {
+    padding: 5px;
+}
+
+

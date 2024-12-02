@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #ebe5c5; 
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'idroid', 'cursive';
+
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.09em;
+}
+
+strong {
+    color: var(--cor3);
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+img.pqn {
+    max-width: 350px;
+}
+
+
+header {
+    background-image: linear-gradient(to bottom,var(--cor3), var(--cor5) );
+    color: white; 
+    padding: 40px;
+            
+}
+
+header > h1 {
+    font-weight: normal;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding-bottom: 40px;
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.389);
+    margin-bottom: 15px;
+
+
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 5px;
+    padding-bottom: 12px;
+    font-size: 0.8em;
+    font-family: var(--fonte-padrao);
+    font-weight: bolder;
+
+    
+}
+
+nav > a {
+    font-size: 0.87em;
+    padding: 15px;
+    color: var(--cor1); 
+    text-decoration: none;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    color: var(--cor4);
+    padding: 10px;
+    margin: 5px;
+    background-color:var(--cor1);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.312);
+    
+    
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.512);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+article {
+    padding: 10px;
+    font-family:var(--fonte-padrao);  
+}
+
+article > h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    text-align: center;
+}
+
+article > p {
+    margin: 10px;
+    padding: 5px;
+}
+
+
+article > h2 {
+    margin: 5px;
+    padding: 3px;
+    text-indent: 3px;
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), white);
+}
+
+
+p > a {
+    text-decoration: none;
+    color: var(--cor3);
+    
+
+}
+
+p > a:hover {
+    text-decoration: underline var(--cor4);
+    color: var(--cor4);
+}
+
+section {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    max-width: 1000px;
+    height: 400px;
+    text-align: center;
+    background-color: var(--cor5);
+    margin: 10px -10px 15px -10px;
+    padding: 10px;
+}
+
+section > iframe {
+    max-width: 600px;
+    max-height: 500px;
+    margin: auto;
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor1);
+    max-width: 900px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.515);
+    
+}
+
+aside > ul {
+    list-style: inside;
+    list-style-type: '\✔ ';
+    columns: 2;
+}
+
+aside > h3 {
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    
+}
+
+aside > p {
+    margin: 7px;
+    padding: 3px;
+}
+
+aside strong {
+    color: var(--cor4);
+}
+footer {
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: var(--cor5);
+}
+
+footer > p {
+    text-align: center;
+}
